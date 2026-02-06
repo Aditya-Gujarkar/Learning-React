@@ -8,6 +8,7 @@ import ConditionalsTab from './ConditionalsTab.jsx';
 import MsgBox from './MsgBox.jsx';
 import AmzProductTab from './AmzProductTab.jsx';
 import Button from './Button.jsx';
+import Form from './Form.jsx';
 
 // 1. 1st component
 function Description() {
@@ -32,6 +33,8 @@ function App() {
                     <h2 style={{textAlign:"center"}}>Blockbuster Deasls | Shop now</h2>
         <AmzProductTab/> */}
         <Button/>
+        <hr/>
+        <Form/>
     </>
   );
 }

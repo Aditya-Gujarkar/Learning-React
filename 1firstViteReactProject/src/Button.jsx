@@ -1,7 +1,8 @@
 // EVENTS IN REACT
-// 1. Handling Clck Events
-function OnClick(){
+// 1. Handling Clck Events , using event object => it gives all info about that event & all contains all of its properties
+function OnClick(event){
     console.log("Hello");
+    console.log(event);
 }
 function OnDoubleClick(){
     console.log("You double clicked me!");
