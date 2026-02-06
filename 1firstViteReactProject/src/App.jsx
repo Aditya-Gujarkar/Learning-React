@@ -7,6 +7,7 @@ import ProductTab from './ProductTab.jsx';
 import ConditionalsTab from './ConditionalsTab.jsx';
 import MsgBox from './MsgBox.jsx';
 import AmzProductTab from './AmzProductTab.jsx';
+import Button from './Button.jsx';
 
 // 1. 1st component
 function Description() {
@@ -17,19 +18,20 @@ function App() {
 
   return (
     <>
-    <ProductTab />
-      {/*  <h1>Welcome to React</h1>
+    {/* <ProductTab />
+        <h1>Welcome to React</h1>
         <Title />  
         <CurlyBraces />
         <Description />
                 <h1>Welcome to React</h1>
         <Title />  
         <CurlyBraces />
-        <Description /> */}
+        <Description /> 
         <ConditionalsTab/>
         <MsgBox userName="Aditya" textColor="skyblue"/>
                     <h2 style={{textAlign:"center"}}>Blockbuster Deasls | Shop now</h2>
-        <AmzProductTab/>
+        <AmzProductTab/> */}
+        <Button/>
     </>
   );
 }
