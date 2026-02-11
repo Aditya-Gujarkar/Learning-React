@@ -6,6 +6,7 @@ import Counter from './Counter'
 import LikeButton from './LikeButton'
 import ToDoApp from './ToDoApp'
 import LotteryBasic from './LotteryBasic'
+import ALotteryGame from './ALotteryGame'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -39,6 +40,8 @@ function App() {
       <ToDoApp />
       <hr />
       <LotteryBasic />
+      <hr />
+      <ALotteryGame />
     </>
   )
 }
