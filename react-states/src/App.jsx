@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Counter from './Counter'
 import LikeButton from './LikeButton'
+import ToDoApp from './ToDoApp'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -33,6 +34,8 @@ function App() {
       <h1>React States</h1>
       <Counter />
       <LikeButton />
+      <hr />
+      <ToDoApp />
     </>
   )
 }
