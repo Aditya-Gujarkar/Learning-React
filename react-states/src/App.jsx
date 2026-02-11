@@ -7,10 +7,17 @@ import LikeButton from './LikeButton'
 import ToDoApp from './ToDoApp'
 import LotteryBasic from './LotteryBasic'
 import ALotteryGame from './ALotteryGame'
+import {sum} from "./helper"
 
 function App() {
   // const [count, setCount] = useState(0)
 
+  // PASSING FUNCTIONS AS PROPS
+  const winningCond=(ticket)=>{
+    // return sum(ticket)===15;
+    // return ticket.every(num=>num===ticket[0]);
+    return ticket[0]===0;
+  }
   return (
     <>
       {/* <div>
@@ -41,7 +48,7 @@ function App() {
       <hr />
       <LotteryBasic />
       <hr />
-      <ALotteryGame />
+      <ALotteryGame n={3} winningCond={winningCond}/>
     </>
   )
 }
