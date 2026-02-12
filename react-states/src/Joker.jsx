@@ -20,7 +20,7 @@ export default function Joker() {
         setJoke({ setup: jsonResponse.setup, punchline: jsonResponse.punchline });
     }
         getFirstJoke();
-    },[]);
+    },[]  );
 
     return (
         <div>
