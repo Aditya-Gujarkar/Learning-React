@@ -8,6 +8,7 @@ import ToDoApp from './ToDoApp'
 import LotteryBasic from './LotteryBasic'
 import ALotteryGame from './ALotteryGame'
 import {sum} from "./helper"
+import Form from './Form'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -49,6 +50,8 @@ function App() {
       <LotteryBasic />
       <hr />
       <ALotteryGame n={3} winningCond={winningCond}/>
+      <hr />
+      <Form />
     </>
   )
 }
