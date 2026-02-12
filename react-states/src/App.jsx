@@ -7,17 +7,21 @@ import LikeButton from './LikeButton'
 import ToDoApp from './ToDoApp'
 import LotteryBasic from './LotteryBasic'
 import ALotteryGame from './ALotteryGame'
-import {sum} from "./helper"
+import { sum } from "./helper"
 import Form from './Form'
+import CommentsForm from './CommentsForm'
+import CounterUseEffect from './CounterUseEffect'
+import CounterUseEffectWithDependencies from './CounterUseEffectWithDependencies'
+import Joker from './Joker'
 
 function App() {
   // const [count, setCount] = useState(0)
 
   // PASSING FUNCTIONS AS PROPS
-  const winningCond=(ticket)=>{
+  const winningCond = (ticket) => {
     // return sum(ticket)===15;
     // return ticket.every(num=>num===ticket[0]);
-    return ticket[0]===0;
+    return ticket[0] === 0;
   }
   return (
     <>
@@ -49,9 +53,17 @@ function App() {
       <hr />
       <LotteryBasic />
       <hr />
-      <ALotteryGame n={3} winningCond={winningCond}/>
+      <ALotteryGame n={3} winningCond={winningCond} />
       <hr />
       <Form />
+      <hr />
+      <CommentsForm />
+      <hr />
+      <CounterUseEffect />
+      <hr />
+      <CounterUseEffectWithDependencies />
+      <hr />
+      <Joker />
     </>
   )
 }
